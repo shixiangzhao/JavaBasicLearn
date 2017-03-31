@@ -10,6 +10,9 @@ public class Employee {
 	private double salary;
 	private Date hireDate;
 
+	public Employee() {
+	}
+
 	public Employee(String name, double salary, int year, int mouth, int day) {
 		this.name = name;
 		this.salary = salary;

@@ -9,6 +9,15 @@ public class Manager extends Employee {
 		this.bonus = 0;
 	}
 
+	public void setBonus(double bonus) {
+		this.bonus = bonus;
+	}
+
+	public double getBonus() {
+		double baseSalary = super.getSalary();
+		return baseSalary + bonus;
+	}
+
 	@Override
 	public boolean equals(Object otherObject) {
 		if (!super.equals(otherObject)) {

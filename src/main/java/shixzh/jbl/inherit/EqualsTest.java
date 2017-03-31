@@ -14,6 +14,16 @@ public class EqualsTest {
 		System.out.println("shi1.equals(shi3): " + shi1.equals(shi3));
 		System.out.println("shi1.equals(bob): " + shi1.equals(bob));
 		System.out.println("bob.toString(): " + bob.toString());
+		
+		Manager carl = new Manager("carl", 104, 1989, 12, 11);
+		Manager boss = new Manager("carl", 104, 1989, 12, 11);
+		boss.setBonus(50);
+		System.out.println("boss.toString(): " + boss.toString());
+		System.out.println("carl.equals(boss): " + carl.equals(boss));
+		System.out.println("shi1.hashCode(): " + shi1.hashCode());
+		System.out.println("shi3.hashCode(): " + shi3.hashCode());
+		System.out.println("bob.hashCode(): " + bob.hashCode());
+		System.out.println("carl.hashCode(): " + carl.hashCode());
 	}
 
 }
