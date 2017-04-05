@@ -49,17 +49,17 @@ public class ReflectionTest {
 
 	private static void printFields(Class c1) {
 		Field[] fields = c1.getFields();
-		for(Field f : fields){
+		for (Field f : fields) {
 			Class retType = f.getType();
 			String name = f.getName();
 			System.out.print("  ");
 			String modifiers = Modifier.toString(f.getModifiers());
-			if(modifiers.length()>0){
+			if (modifiers.length() > 0) {
 				System.out.print(modifiers + " ");
 			}
 			System.out.println(retType + " " + name + ";");
 		}
-		
+
 	}
 
 	private static void printMethods(Class c1) {
