@@ -17,7 +17,7 @@ public class ObjectAnalyzer {
 			return "...";
 		}
 		visited.add(obj);
-		Class c1 = obj.getClass();
+		Class<?> c1 = obj.getClass();
 		if (c1 == String.class) {
 			return (String) obj;
 		}
@@ -49,9 +49,9 @@ public class ObjectAnalyzer {
 					if (!r.endsWith("[")) {
 						r += ",";
 					}
-					r += f.getName() + ",";
+					r += f.getName() + "=";
 					try {
-						Class t = f.getType();
+						Class<?> t = f.getType();
 						Object val = f.get(obj);
 						if (t.isPrimitive()) {
 							r += val;
