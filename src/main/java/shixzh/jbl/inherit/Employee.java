@@ -20,6 +20,10 @@ public class Employee {
 		this.hireDate = calendar.getTime();
 	}
 
+	public Employee(String name) {
+		this.name = name;
+	}
+
 	public String getName() {
 		return name;
 	}
