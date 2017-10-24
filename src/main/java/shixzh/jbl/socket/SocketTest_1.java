@@ -6,7 +6,7 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Scanner;
 
-public class SocketTest {
+public class SocketTest_1 {
 
     public static void main(String[] args) {
         try (

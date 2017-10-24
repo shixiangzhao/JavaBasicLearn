@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class EchoServer {
+public class EchoServer_3 {
 
     public static void main(String[] args) {
         try {
@@ -13,7 +13,7 @@ public class EchoServer {
             while(true) {
                 System.out.println("Spawning: " + i);
                 Socket incoming = s.accept();
-                Runnable r = new ThreadedEchoHandler(incoming);
+                Runnable r = new ThreadedEchoHandler_4(incoming);
                 Thread t = new Thread(r);
                 t.start();
                 i++;

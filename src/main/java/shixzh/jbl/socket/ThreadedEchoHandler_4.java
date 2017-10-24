@@ -7,11 +7,11 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
 
-public class ThreadedEchoHandler implements Runnable {
+public class ThreadedEchoHandler_4 implements Runnable {
 
     private Socket incoming;
 
-    public ThreadedEchoHandler(Socket s) {
+    public ThreadedEchoHandler_4(Socket s) {
         this.incoming = s;
     }
 
